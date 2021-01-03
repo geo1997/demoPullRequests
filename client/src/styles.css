@@ -1,0 +1,81 @@
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+    margin-top: -15px;
+}
+
+@keyframes colorRotate {
+    from {
+        color: #6666ff;
+    }
+    10% {
+        color: #0099ff;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
+}
+
+
+#grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+.bd {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    opacity:0.8;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:65px;
+    left:0px;
+    z-index:1000;
+}
+
